@@ -8,6 +8,7 @@ pylint = "*"
 flake8 = "*"
 
 [packages]
+pandas = "*"
 
 [requires]
 python_version = "3.8"
