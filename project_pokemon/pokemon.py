@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("pokemon_data.csv")
+df = pd.read_csv("/Users/peeyushsingla/projects/learning_pandas/project_pokemon/pokemon_data.csv")
 
 # print(df)
 
@@ -33,7 +33,7 @@ df = pd.read_csv("pokemon_data.csv")
 
 # print(df.sort_values(["Type 1", "HP"], ascending = [1,0]).head(10))
 
-df["Total"] = df.iloc[:,4:10].sum(axis= 1)
+# df["Total"] = df.iloc[:,4:10].sum(axis= 1)
 # print(df.Total.head(10))
 
 #rearranging columns
@@ -51,10 +51,10 @@ df["Total"] = df.iloc[:,4:10].sum(axis= 1)
 
 #new dataframes
 
-new_df = df.loc[(df["Type 1"] == "Grass") & (df["Type 2"] == "Poison")  & (df["HP"]> 70)]
+# new_df = df.loc[(df["Type 1"] == "Grass") & (df["Type 2"] == "Poison")  & (df["HP"]> 70)]
 # new_df.to_csv("filtered.csv", index = False)
 
-new_df = new_df.reset_index(drop = True)
+# new_df = new_df.reset_index(drop = True)
 # new_df.to_csv("filtered_new.csv", index = False)
 # print(new_df)
 
@@ -83,7 +83,7 @@ new_df = new_df.reset_index(drop = True)
 
 chunk_df = pd.DataFrame(columns = df.columns)
 
-for df in pd.read_csv("pokemon_data.csv", chunksize = 5):
+for df in pd.read_csv("/Users/peeyushsingla/projects/learning_pandas/project_pokemon/pokemon_data.csv", chunksize = 5):
     results = df.groupby(["Type 1"]).count()
 
 chunk_df = pd.concat([chunk_df, results])
