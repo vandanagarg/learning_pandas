@@ -10,7 +10,7 @@ titanic_df = pd.read_csv(file_name)
 # To change Maximum and minimum rows setting
 print(pd.options.display.max_rows)
 print(pd.options.display.min_rows)
-pd.options.display.max_rows = 900
+# pd.options.display.max_rows = 900  # uncomment to change the max row limit
 # Earlier version it was 60 and used to display first and last 30 rows of a df
 # if the rows are more than 60.
 pd.options.display.min_rows = 20  # Allowed in latest version
@@ -24,8 +24,11 @@ print(titanic_df.tail(2))  # Can be updated as well
 
 titanic_df.info()  # Summarize data at a glance about rows and columns
 
-# describe returns a summary statistics on numericals columns
+# describe returns a summary statistics on numerical columns
 print(titanic_df.describe())
 
-# to chevk summary for non numericals columns
+# to check summary for non numerical columns
 print(titanic_df.describe(include="O"))
+
+print(type(titanic_df))  # <class 'pandas.core.frame.DataFrame'>
+# object titanic_df is an instance of class pandas dataframe
