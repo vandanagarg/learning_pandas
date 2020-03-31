@@ -2,3 +2,4 @@
 .vscode/settings.json
 .vscode/*
 pandas_udemy_bootcamp/Course_Materials_Part1
+pandas_udemy_bootcamp/__pycache__/
