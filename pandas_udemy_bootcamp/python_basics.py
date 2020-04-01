@@ -30,5 +30,16 @@ print(titanic_df.describe())
 # to check summary for non numerical columns
 print(titanic_df.describe(include="O"))
 
+""" Main 3 datatypes in pandas """
+# Dataframe
 print(type(titanic_df))  # <class 'pandas.core.frame.DataFrame'>
 # object titanic_df is an instance of class pandas dataframe
+
+# Series
+print(type(titanic_df["age"]))  # <class 'pandas.core.series.Series'>
+
+# Index Object
+print(titanic_df.columns)  # using attribute columns
+print(titanic_df.index)  # using attribute index
+print(type(titanic_df.columns))  # <class 'pandas.core.indexes.base.Index'>
+print(type(titanic_df.index))  # <class 'pandas.core.indexes.range.RangeIndex'>
