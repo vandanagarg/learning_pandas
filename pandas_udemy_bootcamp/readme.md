@@ -16,3 +16,9 @@
 * Pandas series is a datatype too - it shows only one column/row. It is a one dimensional labelled array.
 * It is called labelled since it contains rows/columns data along with the indexes of the data frame.
 
+#### Position based indexing
+
+* Selecting/Slicing a particular element/row/column is called position based indexing using iloc[].
+* Zero based indexing and negative indexing are two concepts limited to python.
+* Zero based indexing is that the indexes will start from "0" and is valid for data frames as well.
+* Negative indexing is that the indexes from the last element will start from "-1" and is valid for data frames as well.
