@@ -1,9 +1,7 @@
 """ Label based indexing and Slicing with loc[] """
-import pandas as pd
+from dataframe_utilities import DataframeUtilities as dfu
 
-PATH = "/Users/peeyushsingla/projects/learning_pandas/pandas_udemy_bootcamp/Course_Materials_Part1/Video_Lecture_NBs/"  # noqa: E501
-file = PATH + "summer.csv"
-summer_df = pd.read_csv(file, index_col="Athlete")
+summer_df = dfu.get_indexed_dataframe("summer.csv", "Athlete")
 # print(summer_df)
 
 print(summer_df.loc["DRIVAS, Dimitrios"])

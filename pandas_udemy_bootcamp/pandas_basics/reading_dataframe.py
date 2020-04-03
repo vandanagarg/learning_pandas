@@ -1,9 +1,7 @@
 """Selecting particular columns/rows using specific ways/methods"""
-import pandas as pd
+from dataframe_utilities import DataframeUtilities as dfu
 
-PATH = "/Users/peeyushsingla/projects/learning_pandas/pandas_udemy_bootcamp/Course_Materials_Part1/Video_Lecture_NBs/"  # noqa: E501
-file_name = PATH + "titanic.csv"
-titanic_df = pd.read_csv(file_name)
+titanic_df = dfu.get_dataframe("titanic.csv")
 # print(titanic_df)
 
 # selecting one column age - output is in form of pandas series
