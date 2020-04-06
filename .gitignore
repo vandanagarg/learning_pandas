@@ -4,3 +4,11 @@
 pandas_udemy_bootcamp/Course_Materials_Part1
 pandas_udemy_bootcamp/__pycache__/
 pandas_udemy_bootcamp/test.py
+pandas_udemy_bootcamp/src/pandas_basics/__pycache__
+pandas_udemy_bootcamp/src/pandas_basics/__pycache__/*
+pandas_udemy_bootcamp/src/indexing_slicing/__pycache__
+pandas_udemy_bootcamp/src/indexing_slicing/__pycache__/*
+pandas_udemy_bootcamp/src/utilities/__pycache__
+pandas_udemy_bootcamp/src/utilities/__pycache__/*
+pandas_udemy_bootcamp/src/__pycache__
+pandas_udemy_bootcamp/src/__pycache__/*
