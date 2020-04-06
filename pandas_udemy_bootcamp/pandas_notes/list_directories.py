@@ -3,7 +3,7 @@ import os
 
 
 # (sys.path.insert(1, os.path.dirname(__file__)))
-# sys.path.insert(2, '/Users/peeyushsingla/projects/learning_pandas/pandas_udemy_bootcamp/utilities')
+# sys.path.insert(2, '/Users/peeyushsingla/projects/learning_pandas/pandas_udemy_bootcamp/utilities')  # noqa: E501
 # print(sys.path)
 # print(os.path.dirname(__file__))
 
@@ -35,7 +35,7 @@ with os.scandir(path) as it:
         if not entry.name.startswith('.') and not entry.name.endswith('.py'):
             dir_list.append(os.path.abspath(path) + "/" + entry.name)
             # print(entry.name)
-    print(dir_list)        
+    print(dir_list)
     # print(list(map(os.path.abspath(path), )))
 
 # print(os.path.abspath(path))
