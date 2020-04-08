@@ -1,4 +1,4 @@
-""" Analyze single columns of a DataFrame (Pandas Series) """
+""" Analyze single columns of a DataFrame called as (Pandas Series) """
 import config_file  # noqa: F401
 from utilities import DataframeUtilities as dfu  # Type 1, 2
 # from utilities.dataframe_utilities import DataframeUtilities as dfu  # Type 3
