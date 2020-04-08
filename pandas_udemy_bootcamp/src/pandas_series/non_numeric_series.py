@@ -1,8 +1,8 @@
 """ Analyze non-numerical series with unique(), nunique() and value_count() """
-""" unique(), value_count() methods are only series methods """
-""" nunique() method is supported by both dataframe and series """
 import config_file  # noqa: F401
 from utilities import DataframeUtilities as dfu
+""" unique(), value_count() methods are only series methods """
+""" nunique() method is supported by both dataframe and series """
 
 
 summer_df = dfu.get_dataframe("summer.csv")
