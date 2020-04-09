@@ -31,7 +31,9 @@ print(titanic_df.age.idxmin())
 print(titanic_df.loc[titanic_df.age.idxmax()])  # returns pandas series
 
 # Checking dictionary max/min indexes
-dic_sales = {"Sun": 10, "Mon": 25, "Tues": 76, "Thur": 6, "Sat": 36, "Fri": 0, "Wed": None}
+dic_sales = {
+    "Sun": 10, "Mon": 25, "Tues": 76, "Thur": 6,
+    "Sat": 36, "Fri": 0, "Wed": None}
 print(dic_sales)
 
 sales = pd.Series(dic_sales)
