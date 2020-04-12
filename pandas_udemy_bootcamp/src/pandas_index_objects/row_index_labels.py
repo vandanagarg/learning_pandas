@@ -44,7 +44,7 @@ print(summer[56: 60])
 print(summer.index.is_unique)
 
 # assign index name a new value
-print(summer.index.name)  # No existing value
+print(summer.index.name)  # No existing value o/p - None
 summer.index.name = "Medal Number"
 # validating new index name
 print(summer.index.name)
