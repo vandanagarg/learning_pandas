@@ -1,9 +1,8 @@
 """ Position based indexing and Slicing with iloc[] """
-import pandas as pd
+import config_file  # noqa: F401
+from utilities.dataframe_utilities import DataframeUtilities as dfu
 
-PATH = "/Users/peeyushsingla/projects/learning_pandas/pandas_udemy_bootcamp/Course_Materials_Part1/Video_Lecture_NBs/"  # noqa: E501
-file = PATH + "summer.csv"
-summer_df = pd.read_csv(file)
+summer_df = dfu.get_dataframe("summer.csv")
 # print(summer_df)
 
 # Changing default indexes
@@ -12,7 +11,7 @@ summer_df.info()  # RangeIndex: 31165 entries, 0 to 31164
 # if we want to make a specific column to act as a index use index_col
 # give column name while reading file and it decreases our data columns
 
-summer_df = pd.read_csv(file, index_col="Athlete")
+summer_df = dfu.get_indexed_dataframe("summer.csv", "Athlete")
 summer_df.info()  # Index: 31165 entries, HAJOS, Alfred to LIDBERG, Jimmy
 
 # reading rows

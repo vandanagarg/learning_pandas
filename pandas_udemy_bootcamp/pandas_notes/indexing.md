@@ -1,5 +1,11 @@
 # Types of Indexing in Pandas in order to fetch row and column details
 
+* There are 3 ways to fetch indexed data from a data frame
+1. Position based indexing - using numbers/ indexes/ range
+2. Label based indexing - using row/ column labels
+3. Using reindex() - Using both number/position and label indexes
+* Try using following format `dataframe_name.method_name[rows/index/[names], columns/index/[names]]` while indexing and fetching data for a row/column.
+
 #### Position based indexing (iloc[])
 
 * Selecting/Slicing a particular element/row/column is called position based indexing using iloc[].

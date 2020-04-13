@@ -1,9 +1,10 @@
 """First Data Inspection"""
 import pandas as pd
+import config_file  # noqa: F401
+from utilities.dataframe_utilities import DataframeUtilities as dfu
 
-PATH = "/Users/peeyushsingla/projects/learning_pandas/pandas_udemy_bootcamp/Course_Materials_Part1/Video_Lecture_NBs/"  # noqa: E501
-file_name = PATH + "titanic.csv"
-titanic_df = pd.read_csv(file_name)
+
+titanic_df = dfu.get_dataframe("titanic.csv")
 # print(titanic_df)
 
 

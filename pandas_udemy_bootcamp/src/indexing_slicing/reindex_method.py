@@ -1,9 +1,8 @@
 """ Indexing and Slicing with reindex() """
-import pandas as pd
+import config_file  # noqa: F401
+from utilities.dataframe_utilities import DataframeUtilities as dfu
 
-PATH = "/Users/peeyushsingla/projects/learning_pandas/pandas_udemy_bootcamp/Course_Materials_Part1/Video_Lecture_NBs/"  # noqa: E501
-file = PATH + "summer.csv"
-summer_df = pd.read_csv(file)
+summer_df = dfu.get_dataframe("summer.csv")
 # print(summer_df)
 
 # passing a non existing label 40000, age
@@ -17,8 +16,8 @@ print(summer_df.reindex(
 
 """ Working with non unique indexes """
 
-summer = pd.read_csv(file, index_col="Athlete")
-print(summer)
+summer = dfu.get_indexed_dataframe("summer.csv", "Athlete")
+# print(summer)
 
 # When we don't pass an index specifically and just give the columns
 print(summer.reindex(columns=["Medal", "Age"]))
