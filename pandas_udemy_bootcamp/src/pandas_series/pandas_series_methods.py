@@ -3,6 +3,7 @@ import config_file  # noqa: F401
 from utilities import DataframeUtilities as dfu  # Type 1, 2
 # from utilities.dataframe_utilities import DataframeUtilities as dfu  # Type 3
 
+
 titanic_df = dfu.get_dataframe("titanic.csv")  # Type 1, 2, 3
 age = titanic_df["age"]
 # print(titanic_df)

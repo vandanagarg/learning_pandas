@@ -2,6 +2,7 @@
 import config_file  # noqa: F401
 from utilities.dataframe_utilities import DataframeUtilities as dfu
 
+
 summer_df = dfu.get_indexed_dataframe("summer.csv", "Athlete")
 # print(summer_df)
 
