@@ -1,6 +1,7 @@
 import pandas as pd
 # creating a dataframe with all the grades and subjects
 
+
 grades = pd.DataFrame(
         {'Math': [80, 89, 93, 66, 84, 85, 74, 64],
          'Science': [94, 76, 88, 78, 88, 92, 60, 85],
