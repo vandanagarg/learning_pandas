@@ -5,6 +5,7 @@ import numpy as np
 import config_file  # noqa: F401
 from utilities.file_utilities import FileUtilities
 
+
 PATH = FileUtilities.get_abs_path("../../Course_Materials_Part1/Video_Lecture_NBs/")  # noqa: E501
 file_name = PATH + "summer.csv"
 summer_df = pd.read_csv(file_name, usecols=["Athlete"], squeeze=True)

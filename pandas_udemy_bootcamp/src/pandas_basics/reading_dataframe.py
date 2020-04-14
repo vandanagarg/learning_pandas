@@ -2,6 +2,7 @@
 import config_file  # noqa: F401
 from utilities.dataframe_utilities import DataframeUtilities as dfu
 
+
 titanic_df = dfu.get_dataframe("titanic.csv")
 # print(titanic_df)
 
