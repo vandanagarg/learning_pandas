@@ -1,9 +1,0 @@
-{
-    "python.pythonPath": "/Users/peeyushsingla/.local/share/virtualenvs/learning_pandas-lE2CXOR3/bin/python",
-    "python.linting.pylintPath": "/Users/peeyushsingla/.local/share/virtualenvs/learning_pandas-lE2CXOR3/bin/python",
-    "python.linting.pylintEnabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true,
-    "python.terminal.activateEnvironment": true,
-    "python.autoComplete.addBrackets": true,
-}
