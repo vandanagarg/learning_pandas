@@ -1,7 +1,6 @@
 """ Pandas Series indexing and Slicing works same as dataframes using
 []square bracket notation, iloc[] and loc[] operaters. The only problem is
 since it is 1D array we can't slice for rows and columns at once for series """
-
 import config_file  # noqa: F401
 from utilities import DataframeUtilities as dfu
 

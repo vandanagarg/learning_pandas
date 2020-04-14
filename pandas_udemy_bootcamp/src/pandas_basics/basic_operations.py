@@ -7,7 +7,6 @@ from utilities.dataframe_utilities import DataframeUtilities as dfu
 titanic_df = dfu.get_dataframe("titanic.csv")
 # print(titanic_df)
 
-
 # To change Maximum and minimum rows setting
 print(pd.options.display.max_rows)
 print(pd.options.display.min_rows)

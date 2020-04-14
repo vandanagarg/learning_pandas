@@ -2,8 +2,8 @@
 import pandas as pd
 
 
-# passing a list in pd.Index method - caps I
 list_one = [1, 2, 3]
+# passing a list in pd.Index method - caps I
 print(pd.Index(list_one))  # integer index object
 
 list_two = ['m', 't', 'w']
