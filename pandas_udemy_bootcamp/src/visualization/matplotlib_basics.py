@@ -38,12 +38,12 @@ plt.style.use("seaborn")  # change style to seaborn
 plt.figure(figsize=(12, 6))  # change the size of graph
 # Histogram of NY Data
 plt.hist(speed_ny, bins=100, label="New York Data", alpha=0.5, color="red")
-# alpha = 1 no transperancy, 0.5 - partially transparent
+# alpha = 1 no transparency, 0.5 - partially transparent
 # Histogram of Boston Data
 plt.hist(speed_bo, bins=100, label="Boston Data", alpha=0.5, color="blue")
 plt.title("Measured Car Speed (Speed Limit 50 mph)", fontsize=15)  # set title
 plt.xlabel("Speed")  # label x-axis
-plt.ylabel("Occurences")  # label y-axis
+plt.ylabel("Occurrences")  # label y-axis
 # vertical line at NY mean
 plt.vlines(sum(speed_ny)/len(speed_ny), 0, 400, color="red",
            linestyle="--", label="Mean New York")
