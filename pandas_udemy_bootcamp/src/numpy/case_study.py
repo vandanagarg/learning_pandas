@@ -1,6 +1,7 @@
 """ Case Study Numpy vs. Python Standard Library """
 import numpy as np
 import random
+import timeit
 
 
 # using vectorization and method-chaining
@@ -12,10 +13,19 @@ print((
     np.random.randint(1, 11, 1000000).reshape(10000, 100) == 1
     ).sum(axis=1).mean())
 
-# get_ipython().run_line_magic('timeit', '(np.random.randint(1,11,100*10000
-# ).reshape(10000,100) == 1).sum(axis = 1).mean()')
+print("\n testing performance for vectorization and method-chaining: ")
+
+print(timeit.timeit('''
+import numpy as np
+import random
+(np.random.randint(1,11,100*10000
+).reshape(10000,100) == 1).sum(axis = 1).mean()
+''', number=1))
+
 
 # using nested loops, if statements and lists
+
+print("\n testing performance for nested loops, if statements and lists: ")
 
 
 def simulation():
@@ -31,6 +41,7 @@ def simulation():
     return (sum(results) / len(results))
 
 
-print(simulation())
+print("\n simulation result is: " + str(simulation()))
 
-# get_ipython().run_line_magic('timeit', 'simulation()')
+print(timeit.timeit('simulation()', setup="from __main__ import simulation",
+      number=1))
