@@ -1,8 +1,6 @@
 .DS_Store
 .vscode/settings.json
 pandas_udemy_bootcamp/Course_Materials_Part1
-pandas_udemy_bootcamp/__pycache__
-pandas_udemy_bootcamp/*/__pycache__
-pandas_udemy_bootcamp/src/*/__pycache__
+**/__pycache__
 pandas_udemy_bootcamp/test.py
 pandas_udemy_bootcamp/pandas_notes/code_snippets_listing_directories.py
