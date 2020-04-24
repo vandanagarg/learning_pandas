@@ -32,8 +32,7 @@ _**Main Project folders**_:
 It serves as a Pandas Encyclopedia covering all relevant Methods, Attributes and workflows for real life projects. It contains a lot of Pandas Code and exercises on real Data and real life Problems
 
 2. [project_pokemon](https://github.com/vandanagarg/learning_pandas/tree/master/project_pokemon) 
-it's a small project to analyse Pokemon data set using Pandas.
-[source](https://www.youtube.com/watch\?v\=vmEHCJofslg\&t\=170s).
+it's a small [pokemon project](https://www.youtube.com/watch\?v\=vmEHCJofslg\&t\=170s) to analyse Pokemon data set using Pandas.
 
 
 Refer to each folder for elaborated details on each project :smiley:.
