@@ -37,6 +37,7 @@ Folder **[pandas_notes](https://github.com/vandanagarg/learning_pandas/tree/mast
 I have divided and structured the code in src folder as per the sections covered or concepts related to pandas. Given below are the links and rest details of the folders:
 
 Folder **[utilities](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/utilities)** and **[config_file.py](https://github.com/vandanagarg/learning_pandas/blob/master/pandas_udemy_bootcamp/src/indexing_slicing/config_file.py)** module present inside folders contains configuration details to modify sys.path parameter.
+Also, I have kept all my raw data in a separate folder and this module helps me to configure absolute path to read raw data files.
 
 1. **[pandas_basics](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/pandas_basics)**
 contains code related to creating dataframes from csv files, basic manipulations within dataframes(row/columns) and usage of some simple methods for analyzing data just to get an overview of it.
@@ -76,3 +77,5 @@ contains implementation of various statistical concepts needed to analyse and pl
 1. [23 great Pandas codes](https://towardsdatascience.com/23-great-pandas-codes-for-data-scientists-cca5ed9d8a38)
 
 2. [21 pandas operations](https://towardsdatascience.com/21-pandas-operations-for-absolute-beginners-5653e54f4cda)
+
+3. [Magic Commands](https://towardsdatascience.com/top-10-magic-commands-in-python-to-boost-your-productivity-1acac061c7a9)
