@@ -105,3 +105,34 @@ was our intention at all. So, this warning doesn't make much sense.
 Changing the original dataframe along with the slice changes is unpredictable
 and one should check before proceeding further ; so the best practice is we
 didn't use chained indexing & we get no warning and it changes original df '''
+
+
+''' Rules to remember '''
+# If you want to work with and manipulate the whole DataFrame...
+# ... avoid chained Indexing!!! use iloc or loc operators
+
+print("\n Rules to remember:")
+titanic = dfu.get_dataframe("titanic.csv")
+titanic.iloc[1, 3] = 40  # 2nd row, 4th column, no warning
+print(titanic.head())  # alters original df
+
+index_babies = titanic.loc[titanic.age < 1, "age"].index
+titanic.loc[titanic.age < 1, "age"] = 1  # no warning
+print(titanic.loc[index_babies])  # alters original df
+
+# If you want to work with and manipulate a Slice of a DataFrame...
+# ...avoid chained Indexing ...and make a copy with .copy()
+
+titanic = dfu.get_dataframe("titanic.csv")
+age = titanic.age.copy()
+print(age.head())
+
+age[1] = 40  # no warning
+print(age.head())
+print(titanic.head())  # doesn't change value in original df
+
+baby_ages = titanic.loc[titanic.age < 1, ["age", "sex"]].copy()
+print(baby_ages)  # created a new df
+baby_ages["age"] = 1  # no warning
+print(baby_ages)
+print(titanic.loc[index_babies])  # doesn't change value in original df
