@@ -62,11 +62,11 @@ this folder contains concepts and implementation for 2nd data type of pandas:- P
 7. **[visualization](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/visualization)**
 contains different visualization techniques/methods for plotting final data sets using various packages namely matplotlib.
 
-
 8. **[statistics](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/statistics)**
 contains implementation of various statistical concepts needed to analyse and plot final data sets.
 
-
+9. **[dataframe_manipulations](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/dataframe_manipulations)**
+contains code for basic manipulations on dataframes using some best practices and rules in order to avoid mistakes and confusions.
 
 
 <!-- **[]()** -->
@@ -79,3 +79,5 @@ contains implementation of various statistical concepts needed to analyse and pl
 2. [21 pandas operations](https://towardsdatascience.com/21-pandas-operations-for-absolute-beginners-5653e54f4cda)
 
 3. [Magic Commands](https://towardsdatascience.com/top-10-magic-commands-in-python-to-boost-your-productivity-1acac061c7a9)
+
+4. [Replacing excel with python](https://towardsdatascience.com/replacing-excel-with-python-30aa060d35e)
