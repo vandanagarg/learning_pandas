@@ -39,6 +39,7 @@ print(yticks)
 titanic.age.plot(figsize=(12, 8), fontsize=13, c="r", linestyle="-",
                  xlim=(0, 900), ylim=(0, 80), xticks=xticks, yticks=yticks,
                  rot=45)  # rot is to rotate xticks at a particular angle
+# if we give values for xticks and yticks, we can omit xlim/ylim params
 plt.title("Titanic - Ages", fontsize=15)
 plt.legend(loc="best", fontsize=15)  # chooses best place for legend
 plt.xlabel("Passenger No", fontsize=13)
