@@ -37,7 +37,7 @@ Folder **[pandas_notes](https://github.com/vandanagarg/learning_pandas/tree/mast
 I have divided and structured the code in src folder as per the sections covered or concepts related to pandas. Given below are the links and rest details of the folders:
 
 Folder **[utilities](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/utilities)** and **[config_file.py](https://github.com/vandanagarg/learning_pandas/blob/master/pandas_udemy_bootcamp/src/indexing_slicing/config_file.py)** module present inside folders contains configuration details to modify sys.path parameter.
-Also, I have kept all my raw data in a separate folder and this module helps me to configure absolute path to read raw data files.
+Also, I have kept all my raw data in a separate folders and this module helps me to configure absolute paths and read source csv files as dataframe using pandas read operation which is needed to perform different manipulations.
 
 1. **[pandas_basics](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/pandas_basics)**
 contains code related to creating dataframes from csv files, basic manipulations within dataframes(row/columns) and usage of some simple methods for analyzing data just to get an overview of it.
@@ -60,13 +60,13 @@ this folder contains concepts and implementation for 3rd data type of pandas:- I
 this folder contains concepts and implementation for 2nd data type of pandas:- Pandas Series, which is also referred as 1D array.
 
 7. **[visualization](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/visualization)**
-contains different visualization techniques/methods for plotting final data sets using various packages namely matplotlib.
-
+contains different visualization techniques/methods for plotting final data sets using various packages namely _matplotlib_ and using _seaborn_ style.
 
 8. **[statistics](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/statistics)**
 contains implementation of various statistical concepts needed to analyse and plot final data sets.
 
-
+9. **[dataframe_manipulations](https://github.com/vandanagarg/learning_pandas/tree/master/pandas_udemy_bootcamp/src/dataframe_manipulations)**
+contains code for basic manipulations on dataframes using some best practices and rules in order to avoid mistakes and confusions.
 
 
 <!-- **[]()** -->
@@ -79,3 +79,5 @@ contains implementation of various statistical concepts needed to analyse and pl
 2. [21 pandas operations](https://towardsdatascience.com/21-pandas-operations-for-absolute-beginners-5653e54f4cda)
 
 3. [Magic Commands](https://towardsdatascience.com/top-10-magic-commands-in-python-to-boost-your-productivity-1acac061c7a9)
+
+4. [Replacing excel with python](https://towardsdatascience.com/replacing-excel-with-python-30aa060d35e)
