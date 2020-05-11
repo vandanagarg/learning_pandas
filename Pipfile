@@ -14,6 +14,7 @@ scipy = "*"
 seaborn = "*"
 yfinance = "*"
 xlrd = "*"
+xlwt = "*"
 
 [requires]
 python_version = "3.8"
