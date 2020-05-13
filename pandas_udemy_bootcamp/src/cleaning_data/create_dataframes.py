@@ -9,3 +9,7 @@ titanic = dfu.get_dataframe("titanic_imp.csv")
 # Olympic Dataset
 summer = dfu.get_dataframe("summer_imp.csv")
 # print(summer)
+
+# Sales Dataset
+sales = dfu.get_indexed_dataframe("sales.csv", 0)
+# print(sales)
