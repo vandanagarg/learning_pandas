@@ -16,6 +16,7 @@ yfinance = "*"
 xlrd = "*"
 xlwt = "*"
 lxml = "*"
+jinja2 = "*"
 
 [requires]
 python_version = "3.8"
