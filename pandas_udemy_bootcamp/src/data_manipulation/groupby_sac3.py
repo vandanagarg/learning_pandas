@@ -4,7 +4,6 @@ we need to find eldest m/f passengers onboard; we do this using a user
 defined function and this can be used using apply() method.
 So here we see how to use user defined functions using apply method
 and find some specific information '''
-
 import config_file  # noqa: F401
 from utilities import DataframeUtilitiesProject as dfu
 
