@@ -21,6 +21,9 @@ print(table2.groupby(["Country", "Medal"]).Count.sum().unstack(fill_value=0))
 # of all rows and columns
 print(table2.pivot_table(index="Country", columns="Medal", values="Count",
       aggfunc="sum", fill_value=0, margins=True))
+# can even give a descriptive row/column name
+print(table2.pivot_table(index="Country", columns="Medal", values="Count",
+      aggfunc="sum", fill_value=0, margins=True, margins_name="Total"))
 
 # this has to be done manually in groupby method (no builtin parameter)
 agg = table2.groupby(["Country", "Medal"]).Count.sum().unstack(fill_value=0)
