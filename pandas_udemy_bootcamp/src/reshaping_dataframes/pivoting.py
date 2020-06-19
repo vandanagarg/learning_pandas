@@ -3,7 +3,7 @@ import config_file  # noqa: F401
 from utilities import DataframeUtilitiesProject as dfu
 
 
-# Titanic Dataset
+# Table1 Dataset
 table1 = dfu.get_dataframe("table1.csv")
 print(table1)
 print(table1.shape)
