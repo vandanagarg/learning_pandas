@@ -1,5 +1,5 @@
 ''' Limits of pivot() method
-How to overcome these limitations using goupby() method '''
+How to overcome these limitations using goupby() and unstack() method '''
 import config_file  # noqa: F401
 from utilities import DataframeUtilitiesProject as dfu
 
