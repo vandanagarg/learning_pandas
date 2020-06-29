@@ -1,7 +1,7 @@
 ''' Advanced visualization/ statistical plotting with Seaborn '''
-from create_dataframes import titanic
-import matplotlib.pyplot as plt
 import seaborn as sns
+import matplotlib.pyplot as plt
+from create_dataframes import titanic
 
 
 print(titanic.head())
