@@ -18,6 +18,7 @@ xlwt = "*"
 lxml = "*"
 jinja2 = "*"
 statsmodels = "*"
+sklearn = "*"
 
 [requires]
 python_version = "3.8"
