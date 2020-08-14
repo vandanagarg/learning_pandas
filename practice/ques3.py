@@ -14,4 +14,4 @@ print(food["-glucose_100g"].dtype)
 print(food.index)
 
 print(food.product_name.iloc[18])
-food.values[18][7]
+print(food.values[18][7])
