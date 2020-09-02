@@ -12,4 +12,10 @@ temp = pd.read_csv(temp_file)
 # print(temp)
 
 stocks = pd.read_csv(stocks_file)
+stocks = pd.read_csv(stocks_file, header=[0, 1], index_col=[0],
+                     parse_dates=[0])
 # print(stocks)
+
+# daily closing prices
+close = stocks.loc[:, "Close"].copy()
+# print(close.head())
